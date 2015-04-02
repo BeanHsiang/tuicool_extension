@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+</head>
+<body>
+    <div class="top">
+        <img class="logo" src="../icon/logo.png" />
+        <span>推酷 专注于IT领域的信息挖掘和推荐</span>
+    </div>
+    <div id="articles" class="articles_list">
+        <div v-show="articles.length != 0">
+            <div v-repeat="articles">
+                <div class="article_img" v-show="img"><img v-attr="src: img" /></div>
+                <div class="article_title"><a v-attr="href: url, target:blank" v-on="click: show(url)">{{ title }}</a></div>
+                <div>{{ content }}</div>
+                <div class="clear"><span>{{ source }}</span><span class="article_time" v-text="publishTime | nowtime"></span></div>
+                <hr />
+            </div>            
+        </div>
+    </div>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/popup.js"></script>
+</body>
+</html>

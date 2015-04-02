@@ -1,0 +1,46 @@
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #f7f7f7;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo {
+  width: 80px;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+.top{
+  width: 500px;
+}
+.articles_list {
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;   
+}
+.article_img {
+    float: left;
+}
+.article_title {
+    font-size: 16px;
+}
+.article_content {
+    font-size: 12px;
+}
+.article_time {
+    margin-left: 16px;
+}
+.clear{ clear:both} 

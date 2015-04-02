@@ -1,0 +1,23 @@
+{
+	"name":"推酷 实时推送",
+	"version":"0.1.0",
+	"manifest_version":2,
+    "description":"推酷专注于IT领域的信息挖掘和推荐。本插件为推送插件demo",
+    "icons": 
+    { 
+        "16": "icon/logo.png",             
+        "48": "icon/logo.png",            
+        "128": "icon/logo.png" 
+    },
+    "browser_action": 
+    {
+        "default_icon": "icon/logo.png", // optional 
+        "default_title": "推酷 实时推送",      // optional; shown in tooltip 
+        "default_popup": "html/popup.html"        // optional 
+    },
+    "background": {
+        "page": "html/background.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": ["http://*.tuicool.com/*", "https://*.tuicool.com/*", "notifications"]
+}
