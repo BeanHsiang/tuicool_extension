@@ -32,3 +32,9 @@ var app = new Vue({
         }
     }
 });
+
+chrome.notifications.getAll(function (ids) {
+    for (var i in ids) {
+        chrome.notifications.clear(i, function () {});
+    }
+});

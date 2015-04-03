@@ -77,7 +77,7 @@ function analyseArticles(response) {
                 message: notifyArticle.title,
                 isClickable: true
             };
-            chrome.notifications.create(notifyArticle.id, opt, function(id) {
+            chrome.notifications.create(notifyArticle.id, opt, function(id) {                
                 
             });
         }
@@ -101,6 +101,5 @@ chrome.notifications.onClicked.addListener(function (id) {
         }
     }
 });
-
 
 requestArticles();
